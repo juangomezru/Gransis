@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="verificar">Verificar</string>
+    <string name="seleccionar_de_la_galeria">Seleccionar de la Galeria</string>
+    <string name="imagen_de_la_planta">Imagen De la Planta</string>
+    <string name="predicci_n">predicción</string>
+    <string name="Camara" />
+</resources>

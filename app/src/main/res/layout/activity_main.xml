@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="100dp"
+            android:background="@null"
+            android:src="@drawable/camera"
+            android:id="@+id/cameraBtn"
+            />
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionar_de_la_galeria"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/gallery"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:id="@+id/selectBtn"
+            android:elevation="30dp"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/verificar"
+        android:background="@drawable/custom_btn"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/predBtn"
+
+        />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/predBtn"
+    android:background="@drawable/bgborder"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    >
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+
+     android:id="@+id/linearLayout2"
+     android:layout_marginTop="30dp"
+     >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predicción: "
+        android:textSize="23sp"
+        android:textStyle="bold"
+
+
+
+        android:layout_marginStart="10dp" />
+
+     <TextView
+         android:layout_width="230dp"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:textSize="25sp"
+        android:id="@+id/resView"
+
+         android:layout_marginStart="10dp" />
+ </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginBottom="30dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confianza: "
+            android:textSize="23sp"
+            android:textStyle="bold"
+
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:id="@+id/resView2"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/predBtn"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/wave" />
+
+
+
+</RelativeLayout>
